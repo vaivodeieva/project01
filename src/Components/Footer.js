@@ -61,7 +61,7 @@ function Footer() {
     </div>
 
     <div className="d-flex justify-content-between py-4 my-4 border-top">
-      <p> {date.getFullYear()} © Ieva Software Development, Inc. All rights reserved.</p>
+      <p> {date.getFullYear()} © Ieva Software Development, Inc. All rights reserved</p>
       <ul className="list-unstyled d-flex">
         <li className="ms-3"><a className="link-dark" href="https://twitter.com/"><img src={twitterLogo}/> </a></li>
         <li className="ms-3"><a className="link-dark" href="https://www.instagram.com/"><img src={instagramLogo}/> </a></li>
