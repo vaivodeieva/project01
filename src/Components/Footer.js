@@ -1,7 +1,6 @@
+import twitterLogo from '../Assets/Images/twitter.png';
+
 function Footer() {
-
-    let date = new Date();
-
 
     return (
         <div>
@@ -58,17 +57,11 @@ function Footer() {
     </div>
 
     <div className="d-flex justify-content-between py-4 my-4 border-top">
-
-    <div className="col-12 col-md">
-        <small className="d-block mb-3 text-muted text-center"> {date.getFullYear()} © All rights reserved </small>
-        </div>            
-   
-
-      
+      <p> 2021 Company, Inc. All rights reserved.</p>
       <ul className="list-unstyled d-flex">
-        <li className="ms-3"><a className="link-dark" href="#"><svg className="bi" width="24" height="24"><use href="#twitter"/></svg></a></li>
-        <li className="ms-3"><a className="link-dark" href="#"><svg className="bi" width="24" height="24"><use href="#instagram"/></svg></a></li>
-        <li className="ms-3"><a className="link-dark" href="#"><svg className="bi" width="24" height="24"><use href="#facebook"/></svg></a></li>
+        <li className="ms-3"><a className="link-dark" href="#"><svg className="bi" width="24" height="24"><a src='https://twitter.com/'> <img src={{twitterLogo}}/> </a></svg></a></li>
+        <li className="ms-3"><a className="link-dark" href="#"><svg className="bi" width="24" height="24"><use xlinkHref="#instagram"/></svg></a></li>
+        <li className="ms-3"><a className="link-dark" href="#"><svg className="bi" width="24" height="24"><use xlinkHref="#facebook"/></svg></a></li>
       </ul>
     </div>
   </footer>
