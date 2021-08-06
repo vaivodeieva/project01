@@ -1,4 +1,4 @@
-import tabs from '../Data/Tabs.js';
+import {tabs, tabs2, tabs3} from '../Data/Tabs.js';
 import { NavLink } from 'react-router-dom';
 
 function Home() {
@@ -24,6 +24,50 @@ function Home() {
         )
     })
 
+    const tabsElements2 = tabs2.map((tab, index) => {
+        return (
+            <div className="row mb-5 pb-3 border-bottom " key={index}>
+                <div className="col-12 col-md-3" >
+                    <NavLink to={'/data/tabs/' + tab.id} >
+                        <img className="img-fluid" src={tab.image}  />
+                    </NavLink>
+
+                </div>
+                <div className="col-12 col-md-9">
+                    <h3>
+                        <NavLink to={'/tab/' + tab.id} className="articles-title" >{tab.title}</NavLink>
+                    </h3>
+                    <p className="text-muted">
+                        {tab.text}
+                    </p>
+                </div>
+            </div>
+        )
+    })
+
+    const tabsElements3 = tabs3.map((tab, index) => {
+        return (
+            <div className="row mb-5 pb-3 border-bottom " key={index}>
+                <div className="col-12 col-md-3" >
+                    <NavLink to={'/data/tabs/' + tab.id} >
+                        <img className="img-fluid" src={tab.image}  />
+                    </NavLink>
+
+                </div>
+                <div className="col-12 col-md-9">
+                    <h3>
+                        <NavLink to={'/tab/' + tab.id} className="articles-title" >{tab.title}</NavLink>
+                    </h3>
+                    <p className="text-muted">
+                        {tab.text}
+                    </p>
+                </div>
+            </div>
+        )
+    })
+
+
+
     return (
         <div>
 
@@ -42,8 +86,12 @@ function Home() {
                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                 {tabsElements}
                     </div>
-                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                {tabsElements2}
+                    </div>
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                {tabsElements3}
+                    </div>
             </div>
 
         </div>
