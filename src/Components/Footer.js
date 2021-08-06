@@ -1,4 +1,6 @@
 import twitterLogo from '../Assets/Images/twitter.png';
+import instagramLogo from '../Assets/Images/instagram.jpg';
+import fbLogo from '../Assets/Images/facebook.png';
 
 function Footer() {
 
@@ -57,11 +59,13 @@ function Footer() {
     </div>
 
     <div className="d-flex justify-content-between py-4 my-4 border-top">
-      <p> 2021 Company, Inc. All rights reserved.</p>
+      <p> 2021 Ieva Software Development, Inc. All rights reserved.</p>
       <ul className="list-unstyled d-flex">
-        <li className="ms-3"><a className="link-dark" href="#"><svg className="bi" width="24" height="24"><a src='https://twitter.com/'> <img src={{twitterLogo}}/> </a></svg></a></li>
-        <li className="ms-3"><a className="link-dark" href="#"><svg className="bi" width="24" height="24"><use xlinkHref="#instagram"/></svg></a></li>
-        <li className="ms-3"><a className="link-dark" href="#"><svg className="bi" width="24" height="24"><use xlinkHref="#facebook"/></svg></a></li>
+        <li className="ms-3"><a className="link-dark" href="https://twitter.com/"><img src={twitterLogo}/> </a></li>
+        <li className="ms-3"><a className="link-dark" href="https://www.instagram.com/"><img src={instagramLogo}/> </a></li>
+        <li className="ms-3"><a className="link-dark" href="https://twitter.com/"><img src={fbLogo}/> </a></li>
+
+
       </ul>
     </div>
   </footer>
