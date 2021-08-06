@@ -5,7 +5,7 @@ function Header() {
     return (
 
         <div>
-            <nav class="navbar navbar-expand-lg navbar navbar-light" style={{backgroundColor: '#f062b2'}}>
+            <nav class="navbar navbar-expand-lg navbar navbar-light" style={{backgroundColor: '#e0ced9'}}>
                 <div class="container-fluid">
 
                     <a class="navbar-brand" href="#">
