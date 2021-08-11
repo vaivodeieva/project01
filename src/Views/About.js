@@ -9,15 +9,9 @@ function About() {
         return (
             <div className="row mb-5 pb-3 border-bottom " key={index}>
                 <div className="col-12 col-md-3" >
-                    <NavLink to={'/data/tabs/' + tab.id} >
                         <img className="img-fluid" src={tab.image}  />
-                    </NavLink>
-
                 </div>
                 <div className="col-12 col-md-9">
-                    <h3>
-                        <NavLink to={'/tab/' + tab.id} className="articles-title" >{tab.title}</NavLink>
-                    </h3>
                     <p className="text-muted">
                         {tab.text}
                     </p>
@@ -30,15 +24,9 @@ function About() {
         return (
             <div className="row mb-5 pb-3 border-bottom " key={index}>
                 <div className="col-12 col-md-3" >
-                    <NavLink to={'/data/tabs/' + tab.id} >
                         <img className="img-fluid" src={tab.image}  />
-                    </NavLink>
-
                 </div>
                 <div className="col-12 col-md-9">
-                    <h3>
-                        <NavLink to={'/tab/' + tab.id} className="articles-title" >{tab.title}</NavLink>
-                    </h3>
                     <p className="text-muted">
                         {tab.text}
                     </p>
@@ -46,20 +34,15 @@ function About() {
             </div>
         )
     })
+
 
     const tabsElements3 = tabs3.map((tab, index) => {
         return (
             <div className="row mb-5 pb-3 border-bottom " key={index}>
                 <div className="col-12 col-md-3" >
-                    <NavLink to={'/data/tabs/' + tab.id} >
                         <img className="img-fluid" src={tab.image}  />
-                    </NavLink>
-
                 </div>
                 <div className="col-12 col-md-9">
-                    <h3>
-                        <NavLink to={'/tab/' + tab.id} className="articles-title" >{tab.title}</NavLink>
-                    </h3>
                     <p className="text-muted">
                         {tab.text}
                     </p>
@@ -67,8 +50,6 @@ function About() {
             </div>
         )
     })
-
-
 
 
     return (
